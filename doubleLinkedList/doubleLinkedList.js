@@ -74,3 +74,85 @@ cities.insert("Alma", "Carlisle");
 cities.display();
 console.log("---------------------");
 console.log(cities.dispReverse())
+
+
+//------------DoubleLinkedList-----------------//
+
+// function Node(element) {
+//     this.element = element;
+//     this.next = null;
+//     this.prev = null;
+// }
+// function DoubleLinkedList() {
+//     this.head = new Node("head");
+//     this.find = find;
+//     this.insert = insert;
+//     this.insertByKey = insertByKey;
+//     this.remove = remove;
+//     this.reverse = reverse;
+//     this.display = display;
+// }
+
+// function find(element) {
+//     let currentNode = this.head;
+//     while (currentNode.element !== element) {
+//         currentNode = currentNode.next;
+//     }
+//     return currentNode;
+// }
+
+// function insert(element) {
+//     let currentNode = this.head;
+//     let newNode = new Node(element);
+//     newNode.next = currentNode.next;
+//     newNode.prev = currentNode;
+//     currentNode.next = newNode;
+
+// }
+
+// function insertByKey(element, key) {
+//     let currentNode = this.find(key);
+//     let newNode = new Node(element);
+//     newNode.next = currentNode.next;
+//     newNode.prev = currentNode;
+//     currentNode.next = newNode;
+// }
+
+// function remove(el) {
+//     let currentNode = this.find(el);
+//     if (currentNode.next !== null) {
+//         currentNode.prev.next = currentNode.next;
+//         currentNode.next.prev = currentNode.prev;
+//         currentNode.next = null;
+//         currentNode.prev = null;
+//     }
+// }
+
+// function reverse() {
+//     let current = this.head;
+//     let prev = null;
+//     let next = null;
+//     while (current.next !== null) {
+//         next = head.next;
+//         current.next = prev;
+//         prev = current;
+//         current = next;
+//     }
+// }
+
+// function display() {
+//     let currentNode = this.head;
+//     while (currentNode.next !== null) {
+//         console.log(currentNode.next.element);
+//         currentNode = currentNode.next;
+//     }
+// }
+
+// let ddLinkedList = new DoubleLinkedList();
+// ddLinkedList.insertByKey("A", "head");
+// ddLinkedList.insertByKey("B", "A");
+// ddLinkedList.insertByKey("C", "B");
+// ddLinkedList.insertByKey("D", "C");
+// ddLinkedList.insertByKey("E", "D");
+// ddLinkedList.insertByKey('R', 'E')
+// ddLinkedList.display();
